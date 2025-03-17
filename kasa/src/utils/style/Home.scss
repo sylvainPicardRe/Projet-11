@@ -1,0 +1,11 @@
+// colors.scss
+@use 'colors' as *;
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  background-color: $background-color;
+  padding: 50px;
+  border-radius: 1rem;
+}
