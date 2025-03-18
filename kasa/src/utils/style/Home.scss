@@ -1,6 +1,12 @@
 // colors.scss
 @use 'colors' as *;
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -1,0 +1,21 @@
+$chemin-images: '../../assets/';
+
+.banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  &__image {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    opacity: 0.4;
+  }
+}
