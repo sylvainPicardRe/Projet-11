@@ -1,0 +1,24 @@
+@use 'colors' as *;
+
+.collapse {
+  margin-bottom: 3rem;
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 0.5rem;
+    padding: 0 2rem;
+  }
+  &__title,
+  &__content--open {
+    text-align: left;
+  }
+  &__content {
+    height: 0;
+    overflow: hidden;
+    &--open {
+      height: auto;
+    }
+  }
+}
