@@ -4,8 +4,14 @@ import '../../utils/style/Collapse.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import styled from 'styled-components'
 
 function Collapse({ title, content }) {
+  const StyledIcon = styled(FontAwesomeIcon)`
+    cursor: pointer;
+    transition: transform 1s ease;
+    transform: rotate(${(props) => props.rotation}deg);
+  `
   const [isOpen, setIsOpen] = useState(false)
 
   const [rotation, setRotation] = useState(0)
@@ -19,14 +25,10 @@ function Collapse({ title, content }) {
     <div className="collapse">
       <summary className="collapse__summary">
         <h3 className="collapse__title">{title}</h3>
-        <FontAwesomeIcon
+        <StyledIcon
           icon={faChevronUp}
+          rotation={rotation}
           onClick={handleClick}
-          style={{
-            cursor: 'pointer',
-            transition: 'transform 0.3s ease',
-            transform: `rotate(${rotation}deg)`,
-          }}
         />
       </summary>
       <p className={`collapse__content${isOpen ? '--open' : ''}`}>{content}</p>
