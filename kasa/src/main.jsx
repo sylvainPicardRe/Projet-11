@@ -6,7 +6,6 @@ import Home from './pages/Home/'
 import About from './pages/About/'
 import Header from './components/Header'
 import Error from './components/Error'
-import Banner from './components/Banner'
 
 import App from './App.jsx'
 
