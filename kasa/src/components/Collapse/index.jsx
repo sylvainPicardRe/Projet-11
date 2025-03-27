@@ -4,6 +4,7 @@ import '../../utils/style/Collapse.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+
 import styled from 'styled-components'
 
 function Collapse({ title, content }) {
@@ -22,7 +23,7 @@ function Collapse({ title, content }) {
   }
 
   return (
-    <div className="collapse">
+    <div className={`collapse${isOpen ? '--open' : ''}`}>
       <summary className="collapse__summary">
         <h3 className="collapse__title">{title}</h3>
         <StyledIcon

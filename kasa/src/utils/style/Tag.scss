@@ -1,0 +1,12 @@
+@use 'colors' as *;
+
+.tag {
+  background-color: $primary-color;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

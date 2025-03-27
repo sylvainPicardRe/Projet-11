@@ -1,11 +1,11 @@
 import { aboutList } from '../../datas/aboutList'
 
-console.log(aboutList)
-
 import Banner from '../../components/Banner'
 
 import banner from '../../assets/banner1.png'
 import Collapse from '../../components/Collapse'
+
+import '../../utils/style/About.scss'
 
 function About() {
   return (

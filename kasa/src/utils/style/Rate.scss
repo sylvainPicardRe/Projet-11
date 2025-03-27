@@ -1,0 +1,6 @@
+@use 'colors' as *;
+.rating {
+  &--full {
+    color: $primary-color;
+  }
+}

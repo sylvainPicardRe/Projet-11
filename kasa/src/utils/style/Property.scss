@@ -1,0 +1,52 @@
+@use 'colors' as *;
+@use 'Collapse' as *;
+
+.property {
+  text-align: left;
+  &__title {
+    color: $primary-color;
+    font-size: 2rem;
+  }
+  &__image {
+    border-radius: 1rem;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__location {
+    color: black;
+    margin-bottom: 2rem;
+  }
+  &__infos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+}
+
+.tags-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.collapses-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.collapse {
+  flex: 1;
+  &--open {
+    flex: 1;
+  }
+}
+
+.rating-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 20px;
+  font-size: 1.5rem;
+}

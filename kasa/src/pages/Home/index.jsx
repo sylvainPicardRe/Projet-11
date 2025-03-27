@@ -1,4 +1,6 @@
-import residentList from '../../datas/residentList.json'
+import { Link } from 'react-router'
+
+import propertiesList from '../../datas/propertiesList.json'
 
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
@@ -12,12 +14,10 @@ function Home() {
       <main className="main">
         <Banner cover={banner} title={true} />
         <div className="card-wrapper">
-          {residentList.map((resident) => (
-            <Card
-              key={resident.id}
-              title={resident.title}
-              cover={resident.cover}
-            />
+          {propertiesList.map((property) => (
+            <Link key={property.id} to={`/property/${property.id}`}>
+              <Card title={property.title} cover={property.cover} />
+            </Link>
           ))}
         </div>
       </main>

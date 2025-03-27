@@ -1,0 +1,19 @@
+@use 'colors' as *;
+
+.host {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  color: $primary-color;
+  &__name {
+    text-align: right;
+    font-size: xx-large;
+    width: 30%;
+  }
+  &__picture {
+    object-fit: cover;
+    border-radius: 5rem;
+    width: 30%;
+  }
+}
