@@ -1,4 +1,3 @@
-// colors.scss
 @use 'colors' as *;
 
 .main {
@@ -14,4 +13,5 @@
   background-color: $background-color;
   padding: 50px;
   border-radius: 1rem;
+  margin-bottom: 3rem;
 }

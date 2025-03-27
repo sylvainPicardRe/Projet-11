@@ -19,7 +19,7 @@ function Property() {
   }
 
   return (
-    <div className="property">
+    <div className="property container">
       <Slideshow pictures={property.pictures} />
 
       <div>

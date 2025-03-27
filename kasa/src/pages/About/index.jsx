@@ -10,7 +10,7 @@ import '../../utils/style/About.scss'
 function About() {
   return (
     <>
-      <main className="main">
+      <main className="main container">
         <Banner cover={banner} title={false} />
         <div className="collapse-wrapper">
           {aboutList.map(({ id, title, content }) => (

@@ -11,7 +11,7 @@ import banner from '../../assets/banner.png'
 function Home() {
   return (
     <>
-      <main className="main">
+      <main className="main container">
         <Banner cover={banner} title={true} />
         <div className="card-wrapper">
           {propertiesList.map((property) => (

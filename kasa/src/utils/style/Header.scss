@@ -1,15 +1,20 @@
 @use 'colors' as *;
+@use 'general' as *;
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
+  &__logo {
+    width: 10%;
+  }
   &__nav {
     display: flex;
     gap: 50px;
     & a {
       color: black;
+      text-decoration: none;
       &:hover {
         color: $primary-color;
       }

@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 2rem 0;
+  &__img {
+    width: 5%;
+  }
+  &__content {
+    color: white;
+  }
+}

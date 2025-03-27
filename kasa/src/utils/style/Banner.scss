@@ -8,7 +8,6 @@ $chemin-images: '../../assets/';
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.1);
   &__image {
     position: absolute;
     z-index: -1;
