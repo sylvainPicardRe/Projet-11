@@ -17,3 +17,15 @@
     width: 30%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .host {
+    gap: 10px;
+    &__name {
+      font-size: 1rem;
+    }
+    &__picture {
+      width: 30%;
+    }
+  }
+}

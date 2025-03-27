@@ -16,8 +16,19 @@
       color: black;
       text-decoration: none;
       &:hover {
-        color: $primary-color;
+        text-decoration: underline;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    &__logo {
+      width: 40%;
+    }
+    &__nav {
+      gap: 20px;
     }
   }
 }

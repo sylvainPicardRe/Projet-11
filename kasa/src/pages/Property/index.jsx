@@ -22,9 +22,9 @@ function Property() {
     <div className="property container">
       <Slideshow pictures={property.pictures} />
 
-      <div>
+      <div className="property__content">
         <div className="property__infos">
-          <div>
+          <div className="property__col--1">
             <h1 className="property__title">{property.title}</h1>
             <p className="property__location">{property.location}</p>
             <div className="tags-wrapper">
@@ -34,7 +34,7 @@ function Property() {
             </div>
           </div>
 
-          <div>
+          <div className="property__col--2">
             <Host name={property.host.name} picture={property.host.picture} />
             <div className="rating-wrapper">
               <Rate number={property.rating} />
