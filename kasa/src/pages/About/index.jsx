@@ -14,8 +14,8 @@ function About() {
         <Banner cover={banner} title={false} />
         <div className="collapse-wrapper">
           {aboutList.map(({ id, title, content }) => (
-            <div key={id}>
-              <Collapse title={title} content={content} />
+            <div>
+              <Collapse key={id} title={title} content={content} />
             </div>
           ))}
         </div>

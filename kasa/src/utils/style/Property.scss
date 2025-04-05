@@ -35,7 +35,9 @@
   justify-content: space-between;
   gap: 3rem;
 }
-
+a {
+  margin: auto;
+}
 .collapse {
   flex: 1;
   &--open {

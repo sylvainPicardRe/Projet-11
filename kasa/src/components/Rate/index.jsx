@@ -4,7 +4,6 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import '../../utils/style/Rate.scss'
 
 function Rate({ number }) {
-  console.log(number)
   const stars = []
 
   for (let i = 0; i < 5; i++) {

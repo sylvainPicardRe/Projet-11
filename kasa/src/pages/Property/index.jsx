@@ -45,8 +45,8 @@ function Property() {
           <Collapse title={'Description'} content={property.description} />
           <Collapse
             title={'Équipements'}
-            content={property.equipments.map((equipment) => (
-              <li>{equipment}</li>
+            content={property.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
             ))}
           />
         </div>
