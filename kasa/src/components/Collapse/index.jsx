@@ -7,30 +7,24 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 import styled from 'styled-components'
 
+const StyledIcon = styled(FontAwesomeIcon)`
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: ${({ $isOpen }) => ($isOpen ? 'rotate(180deg)' : 'rotate(0deg)')};
+`
+
 function Collapse({ title, content }) {
-  const StyledIcon = styled(FontAwesomeIcon)`
-    cursor: pointer;
-    transition: transform 1s ease;
-    transform: rotate(${(props) => props.rotation}deg);
-  `
   const [isOpen, setIsOpen] = useState(false)
 
-  const [rotation, setRotation] = useState(0)
-
   function handleClick() {
-    setRotation((prevRotation) => prevRotation + 180)
     setIsOpen((prevState) => !prevState)
   }
 
   return (
     <div className={`collapse${isOpen ? '--open' : ''}`}>
-      <summary className="collapse__summary">
+      <summary className="collapse__summary" onClick={handleClick}>
         <h3 className="collapse__title">{title}</h3>
-        <StyledIcon
-          icon={faChevronUp}
-          rotation={rotation}
-          onClick={handleClick}
-        />
+        <StyledIcon icon={faChevronUp} $isOpen={isOpen} />
       </summary>
       <p className={`collapse__content${isOpen ? '--open' : ''}`}>{content}</p>
     </div>
