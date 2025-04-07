@@ -17,17 +17,19 @@
     height: 0;
     overflow: hidden;
     &--open {
-      height: auto;
+      max-height: auto;
       background-color: $background-color;
       margin: auto;
       color: black;
       padding: 2rem;
       border-radius: 0 0 2rem 2rem;
+      transition: 0.3s ease-in-out;
     }
   }
   &--open {
     background-color: $background-color;
     border-radius: 2rem;
     margin-bottom: 3rem;
+    max-height: auto;
   }
 }
