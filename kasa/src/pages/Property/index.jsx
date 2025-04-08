@@ -15,7 +15,7 @@ function Property() {
   const property = propertiesList.find((property) => property.id === id)
 
   if (!property) {
-    return <Navigate to="/404" />
+    return <Navigate to="*" />
   }
 
   return (
